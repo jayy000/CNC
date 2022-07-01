@@ -4,15 +4,27 @@
     box-sizing: border-box;
 }
 
+/*  Navbar*/
+.profile {
+    padding-right: 40px;
+}
+
 .navbar {
+
     display: flex;
     align-items: center;
     padding: 20px;
     height: 80px;
 }
 
+.navbar img {
+    padding-left: 30px;
+}
+
 .logo {
-    padding-right: 500px;
+    padding-top: 30px;
+    padding-left: 500px;
+
 }
 
 nav {
@@ -24,6 +36,7 @@ nav ul {
     display: inline-block;
     list-style-type: none;
     text-align: left;
+    margin-left: 420px;
 }
 
 nav ul li {
@@ -31,27 +44,32 @@ nav ul li {
     margin: 20px;
 }
 
-a {
+.container a {
     text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.container a:hover {
+    color: rgb(242, 255, 0);
 }
 
 .container {
-    width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    background-color: #000000;
+    width: 100%
 }
 
-.row {
-    margin: 100px 70px;
-    background: linear-gradient(#00bfff, #00ffff);
+/*
+.row1 {
+    margin: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .col-2 a {
+    text-decoration: none;
     margin-left: 270px;
 }
 
@@ -60,11 +78,92 @@ a {
     flex-basis: 50%;
     min-width: 300px;
 }
+.col-1 {
 
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 0;
+    flex-basis: 50%;
+    min-width: 300px;
 }
+
+.col-1 img {
+    padding-left: 550px;
+}
+
+.col-1 h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+
+
+
+/* CNC Home Image*/
+.row {
+    position: relative;
+    background: linear-gradient(#00bfff, #00ffff);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.centered {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn33 {
+    border: 2px solid black;
+    color: black;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.btn33 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn33 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn33:hover span {
+    padding-right: 25px;
+
+}
+
+.btn33:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn33:hover {
+    background-color: #FFFFFF;
+}
+
+/*  Shop*/
+
+
+
 
 .btn1 {
 
@@ -82,16 +181,33 @@ a {
     background-color: blue;
 }
 
+.categories a {
+    text-decoration: none;
+}
+
 .categories {
-    margin: 100px 70px;
-    background: linear-gradient(#107DD6, #FFFFFF);
+    position: relative;
+
+    height: 800px;
+
+    /* background: linear-gradient(#107DD6, #FFFFFF);*/
+    background-image: url(DSC02586.jpg );
+    background-size: 1500px 800px;
 
 
+}
+
+.Shop1 {
+    display: flex;
+    position: absolute;
+    top: 2%;
+    left: 45%;
 
 }
 
 .categories p {
     text-align: center;
+    color: #FFFFFF;
 
     padding: 40px 0;
 }
@@ -105,25 +221,22 @@ a {
 }
 
 
-.col-3 p {
-    text-align: center;
-
-}
 
 .col-3 a {
     position: absolute;
-    margin-left: 250px;
+
 
 }
 
 .col-3 {
 
-    margin-top: 50px;
-    flex-basis: 50%;
+
+    flex-basis: 30%;
     min-width: 300px
 }
 
 .col-3 img {
-    max-width: 100%;
-    margin-right: 50px;
+    height: 300px;
+    width: 300px;
+    margin: 50px;
 }
