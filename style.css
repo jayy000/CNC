@@ -1,97 +1,169 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.navbar {
+
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    
+}
+nav ul{
+    display: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.profile {
+   margin-left: 19em;
+    margin-top: 2em;
+}
+.row {
+    position: relative;
+    background: linear-gradient(#00bfff, #00ffff);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/*  Navbar*/
+.row img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.centered {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.categories {
+    position: relative;
+
+    min-height: 100vh;
+    
+
+    
+    background-image: url(DSC02586.jpg );
+    background-size: cover;
+
+
+}
+
+.Shop1 {
+    
+    position: absolute;
+    top: 2%;
+    left: 45%;
+
+}
+
+.categories p {
+    text-align: center;
+    color: #FFFFFF;
+
+    padding: 40px 0;
+}
+
+.div11 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.col-3 a {
+    position: absolute;
+
+
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 300px;
+    
+}
+.col-3 img{
+    margin: 10% 20%;
+  
+}
+.relative{
+    position: relative;
+}
+.btn33 {
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 15% 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+   
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+/*=======================================================
+======================================================
+=======================*/
+@media screen and (min-width:780px) {
+    /*  Navbar*/
 .profile {
-    padding-right: 40px;
+    margin-right: 4em;
+    margin-top: 2em;
 }
 
 .navbar {
 
+    background-color: #000000;
+    width: 100%;
+    
+
     display: flex;
-    align-items: center;
-    padding: 20px;
-    height: 80px;
+   
+ 
+    
 }
 
 .navbar img {
-    padding-left: 30px;
+    padding-left: 3em;
 }
 
-.logo {
-    padding-top: 30px;
-    padding-left: 500px;
 
-}
 
 nav {
     flex: 1;
+    margin-left: 28%;
 
 }
 
 nav ul {
     display: inline-block;
     list-style-type: none;
-    text-align: left;
-    margin-left: 420px;
+    justify-content: center;
+   
+    
 }
 
-nav ul li {
+nav  li {
     display: inline-block;
-    margin: 20px;
+    margin: 2em 1em;
 }
 
-.container a {
+.navbar a {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1rem;
     transition: color 0.2s;
 }
 
-.container a:hover {
+.navbar a:hover {
     color: rgb(242, 255, 0);
 }
-
-.container {
-    background-color: #000000;
-    width: 100%
-}
-
-/*
-.row1 {
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.col-2 a {
-    text-decoration: none;
-    margin-left: 270px;
-}
-
-.col-2 {
-
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-1 {
-
-    flex-basis: 50%;
-    min-width: 300px;
-}
-
-.col-1 img {
-    padding-left: 550px;
-}
-
-.col-1 h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}*/
-
 
 
 /* CNC Home Image*/
@@ -119,12 +191,12 @@ nav ul li {
 .btn33 {
     border: 2px solid black;
     color: black;
-    padding: 14px 30px;
+    padding: 15% 20%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1.25rem;
+   
     cursor: pointer;
     background-color: transparent;
     transition: 0.2s;
@@ -147,7 +219,7 @@ nav ul li {
 }
 
 .btn33:hover span {
-    padding-right: 25px;
+    padding-right: 20px;
 
 }
 
@@ -165,21 +237,7 @@ nav ul li {
 
 
 
-.btn1 {
 
-
-    display: inline-block;
-    background-color: bisque;
-    border-radius: 50px;
-    color: black;
-    padding: 8px 30px;
-    margin: 30px 0;
-    transition: background 0.5s;
-}
-
-.btn1:hover {
-    background-color: blue;
-}
 
 .categories a {
     text-decoration: none;
@@ -187,18 +245,19 @@ nav ul li {
 
 .categories {
     position: relative;
+    display: flex;
+    min-height: 100vh;
+    
 
-    height: 800px;
-
-    /* background: linear-gradient(#107DD6, #FFFFFF);*/
+   
     background-image: url(DSC02586.jpg );
-    background-size: 1500px 800px;
+    background-size: cover;
 
 
 }
 
 .Shop1 {
-    display: flex;
+    
     position: absolute;
     top: 2%;
     left: 45%;
@@ -229,10 +288,9 @@ nav ul li {
 }
 
 .col-3 {
-
-
     flex-basis: 30%;
-    min-width: 300px
+    min-width: 300px;
+    
 }
 
 .col-3 img {
@@ -240,3 +298,14 @@ nav ul li {
     width: 300px;
     margin: 50px;
 }
+.relative{
+    position: relative;
+}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
